@@ -1,0 +1,179 @@
+/* importing font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vh;
+    /* background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); */
+
+
+    background-image: url('/public/pexels-daria-ponomareva-8694231.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover; /* Adjust the size behavior as needed */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed; /* Optional - makes the background image fixed within the viewport */
+
+}
+/* .container{
+    height: 100vh;
+    width: 100vh;
+} */
+.heading {
+    width: 100vh;
+    background: transparent;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    margin-left: 22px;
+}
+.heading h1 a{
+    text-decoration: none;
+    color: #333;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 180px;
+    gap: 100px;
+}
+.navbar a {
+    text-decoration: none;
+    /* color: rgb(241, 234, 234); */
+    color: black;
+    font-size: 18px;
+    width: 100px;
+}
+.navbar a:hover{
+    color: #1743e3 ;
+}
+.signfun{
+    margin-left: 130px;
+}
+.signfun i{
+    font-size: 20px;
+}
+
+.info{
+    position: absolute;
+    display: flex;
+    display: inline-block;
+    height: auto;
+    width: 680px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 150px;
+}
+.info h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+.info p{
+    margin: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.info button{
+    height: 45px;
+    width: 140px;
+    font-size: 20px;
+    margin-left: 220px;
+    border: #333;
+    background-color: rgb(232, 224, 140);
+    border-radius: 6px;
+}
+.info button:hover{
+    color: rgb(241, 234, 234);
+    background-color: skyblue;
+}
+
+
+
+
+.calculator{
+    width: 450px;
+    height: 65vh;
+    margin-top: 80px;
+    margin-left: 750px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem; /* 1rem= 16pixels */
+    /* border-radius: 6px; */
+    gap: 1rem;
+    /* box-shadow: 0 0 8px rgba(0,0,0,0.2); */
+    background-color: transparent;
+    border: solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff; 
+    border-radius: 10px;
+}
+.calculator h1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.calculator .input-box{
+    padding: 2rem;
+    margin-top: 60px;
+    border-radius: 6px;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.input-box input{
+    flex: 1; /* flex-grow, flex-shrink, and flex-basis set to 1 */
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+.input-box button{
+    background: rgb(42, 238, 205);
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: rgb(40, 36, 36);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.input-box button:active{
+    transform: scale(0.95);
+}
+.input-box input::webkit-calendar-picker-indicator{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+    position: absolute;
+    background-position: calc(100% -10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+.results{
+    font-size: 1.3rem;
+    font-weight: 600;
+} 
