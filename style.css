@@ -97,7 +97,8 @@ h1 {
 }
 .info button:hover{
     color: rgb(241, 234, 234);
-    background-color: skyblue;
+    border: solid 2px #1743e3;
+    background: transparent;
 }
 
 
